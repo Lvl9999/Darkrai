@@ -611,7 +611,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
                         Item.TextColor3 = Color3.fromRGB(225, 225, 225)
                     else
                         table.insert(selectedItems, itemText)
-                        Item.TextColor3 = Color3.fromRGB(245,245,245)
+                        Item.TextColor3 = Color3.fromRGB(240, 240, 240)
                     end
                     updateDropTitle()
                     callback(selectedItems)
