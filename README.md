@@ -1,3 +1,4 @@
+```lua
 local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()
 
 local Library = DarkraiX:Window("Darkrai X","","",Enum.KeyCode.RightControl);
@@ -86,4 +87,4 @@ Tab1:Seperator(
 1 = Name (string)
 )
 --]]
-Tab1:Line()
+Tab1:Line()```
