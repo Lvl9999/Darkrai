@@ -1,17 +1,16 @@
 -- Made by Darkrai X (GamingScripter)
-local PlaceName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
+local PlaceName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId);
 
-    if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
-    
-    repeat wait() until game:GetService("Players")
-    
-    if not game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then repeat wait() until game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart") end
-        
-    wait(1)
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+
+repeat wait() until game:GetService("Players");
+
+if not game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then repeat task.wait() until game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart") end
+
+task.wait(1);
 
 do local GUI = game.CoreGui:FindFirstChild("Darkrai");if GUI then GUI:Destroy();end;if _G.Color == nil then
-       _G.Color = Color3.fromRGB(245,245,245)
-   end 
+    _G.Color = Color3.fromRGB(getgenv().ColorUI[1],getgenv().ColorUI[2],getgenv().ColorUI[3]);end
 end
 
 local UserInputService = game:GetService("UserInputService")
@@ -139,7 +138,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	Name.Size = UDim2.new(0, 61, 0, 27)
 	Name.Font = Enum.Font.GothamSemibold
 	Name.Text = hubname
-	Name.TextColor3 = Color3.fromRGB(245,245,245)
+	Name.TextColor3 = Color3.fromRGB(getgenv().ColorUI[1],getgenv().ColorUI[2],getgenv().ColorUI[3])
 	Name.TextSize = 17.000
 
 	local Hub = Instance.new("TextLabel")
@@ -151,7 +150,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	Hub.Size = UDim2.new(0, 81, 0, 27)
 	Hub.Font = Enum.Font.GothamSemibold
 	Hub.Text = "   | "..gamename
-	Hub.TextColor3 = Color3.fromRGB(245,245,245)
+	Hub.TextColor3 = Color3.fromRGB(getgenv().ColorUI[1],getgenv().ColorUI[2],getgenv().ColorUI[3])
 	Hub.TextSize = 17.000
 	Hub.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -164,7 +163,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	BindButton.Size = UDim2.new(0, 100, 0, 27)
 	BindButton.Font = Enum.Font.GothamSemibold
         BindButton.Text = "["..tostring(getgenv().ToggleUI).."]"
-        BindButton.TextColor3 = Color3.fromRGB(245,245,245)
+        BindButton.TextColor3 = Color3.fromRGB(getgenv().ColorUI[1],getgenv().ColorUI[2],getgenv().ColorUI[3])
 	BindButton.TextSize = 13.000
 
 	local Tab = Instance.new("Frame")
@@ -258,7 +257,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 		TabButton.Name = text.."Server"
 		TabButton.Text = text
 		TabButton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-	    TabButton.BorderColor3 = Color3.fromRGB(245,245,245)
+	    TabButton.BorderColor3 = Color3.fromRGB(getgenv().ColorUI[1],getgenv().ColorUI[2],getgenv().ColorUI[3])
         TabButton.BorderSizePixel = 3
 		TabButton.Size = UDim2.new(0, 130, 0, 23)
 		TabButton.Font = Enum.Font.GothamSemibold
