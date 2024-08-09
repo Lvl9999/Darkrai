@@ -128,8 +128,8 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	Logo.BackgroundTransparency = 1.000
 	Logo.Position = UDim2.new(0, 10, 0, 1)
 	Logo.Size = UDim2.new(0, 25, 0, 25)
-	Logo.Image = "rbxassetid://18853503513"
     LogoCorner.CornerRadius = UDim.new(0, 200) 
+	Logo.Image = logo
 
 	local Name = Instance.new("TextLabel")
 	Name.Name = "Name"
@@ -543,7 +543,6 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
             DropScroll.Size = UDim2.new(0, 470, 0, 100)
             DropScroll.CanvasSize = UDim2.new(0, 0, 0, 0)
             DropScroll.ScrollBarThickness = 3
-            DropScroll.DecelerationRate = 0.75
 
             UIListLayout.Parent = DropScroll
             UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
