@@ -121,15 +121,16 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	TCNR.Parent = Top
 
 	local Logo = Instance.new("ImageLabel")
-    local LogoCorner = Instance.new("UICorner")
+    local UICorner = Instance.new("UICorner")
 	Logo.Name = "Logo"
 	Logo.Parent = Top
 	Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Logo.BackgroundTransparency = 1.000
 	Logo.Position = UDim2.new(0, 10, 0, 1)
 	Logo.Size = UDim2.new(0, 25, 0, 25)
-    LogoCorner.CornerRadius = UDim.new(0, 200) 
 	Logo.Image = logo
+    UICorner.CornerRadius = UDim.new(0, 200)
+    UICorner.Parent = Logo
 
 	local Name = Instance.new("TextLabel")
 	Name.Name = "Name"
